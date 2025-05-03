@@ -1,4 +1,4 @@
-from pathlib import Path
+rom pathlib import Path
 import streamlit as st
 from PIL import Image
 
@@ -38,7 +38,6 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 # --- LOAD ASSETS ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-
 
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
@@ -114,7 +113,7 @@ contact_cols[3].markdown(
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write("\n")
-st.markdown("<h3>Experience & Qualifications</h3><hr>", unsafe_allow_html=True)
+st.markdown("<h3>Experience & Qualifications</h3><div style='border-bottom: 2px solid #ccc; margin-top: 10px; margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 
 st.write(
     """
@@ -128,7 +127,7 @@ st.write(
 
 # --- TECHNICAL SKILLS ---
 st.write("\n")
-st.markdown("<h3>Technical Skills</h3><hr>", unsafe_allow_html=True)
+st.markdown("<h3>Technical Skills</h3><div style='border-bottom: 2px solid #ccc; margin-top: 10px; margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -143,7 +142,7 @@ st.markdown(
 
 # --- WORK HISTORY ---
 st.write("\n")
-st.markdown("<h3>Work History</h3><hr>", unsafe_allow_html=True)
+st.markdown("<h3>Work History</h3><div style='border-bottom: 2px solid #ccc; margin-top: 10px; margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 
 # Holcim
 st.markdown(
@@ -192,9 +191,9 @@ st.markdown(
 """
 )
 
-# --- PROJECTS --
+# --- PROJECTS ---
 st.write("\n")
-st.markdown("<h3>Projects</h3><hr>", unsafe_allow_html=True)
+st.markdown("<h3>Projects</h3><div style='border-bottom: 2px solid #ccc; margin-top: 10px; margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 
 for project, details in PROJECTS.items():
     st.markdown(f"**{project}**")
