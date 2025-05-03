@@ -170,14 +170,16 @@ st.markdown(
 st.write("\n")
 
 # Display the logo with job title and date
+
+
 st.markdown(
-    f"""
+    """
     <div style='display: flex; justify-content: space-between; align-items: center;'>
         <div style='display: flex; align-items: center;'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.s" width="100" style="margin-right: 10px;" />
-            <strong> | Intern</strong>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.svg" width="100" style="margin-right: 10px;" />
+            <strong>| Intern</strong>
         </div>
-        <div style='font-weight: normal;'>12/2020 - 01/2021</div>
+        <div>12/2020 - 01/2021</div>
     </div>
     """,
     unsafe_allow_html=True
