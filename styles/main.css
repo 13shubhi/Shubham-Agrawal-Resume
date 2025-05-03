@@ -1,0 +1,39 @@
+/* Ensure white background and black font globally */
+body, .main, .stApp {
+    background-color: white !important;
+    color: black !important;
+}
+
+html, body, .stApp, .markdown-text-container, .css-1v0mbdj, .css-1d391kg, .block-container {
+    color: black !important;
+    font-weight: normal;
+}
+
+/* Bold black headings */
+h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    font-weight: bold !important;
+}
+
+/* Hyperlinks remain blue */
+a {
+    color: #1f77b4 !important;
+}
+
+/* Resume download button styling */
+.stDownloadButton > button {
+    background-color: #58a6ff !important;
+    color: white !important;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+
+/* Section separators (restore horizontal lines) */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0 20px 0;
+}
