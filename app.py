@@ -39,6 +39,7 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
+
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
@@ -169,16 +170,12 @@ st.markdown(
 )
 st.write("\n")
 
-
-
-
-
 # Display the logo with job title and date
 st.markdown(
     f"""
     <div style='display: flex; justify-content: space-between; align-items: center;'>
         <div style='display: flex; align-items: center;'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.svg" width="100" style="margin-right: 10px;" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.s" width="100" style="margin-right: 10px;" />
             <strong> | Intern</strong>
         </div>
         <div style='font-weight: normal;'>12/2020 - 01/2021</div>
@@ -195,7 +192,7 @@ st.markdown(
 """
 )
 
-# --- PROJECTS ---
+# --- PROJECTS --
 st.write("\n")
 st.markdown("<h3>Projects</h3><hr>", unsafe_allow_html=True)
 
