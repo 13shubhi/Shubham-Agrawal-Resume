@@ -167,22 +167,26 @@ st.markdown(
 - Led training sessions and supported cross-functional teams for smooth adoption  
 """
 )
+st.write("\n")
 
-# HCL
-logo_base64 = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/NYtHT8AAAAASUVORK5CYII="
 
+
+
+
+# Display the logo with job title and date
 st.markdown(
     f"""
     <div style='display: flex; justify-content: space-between; align-items: center;'>
         <div style='display: flex; align-items: center;'>
-            <img src="data:image/png;base64,{logo_base64}" width="100" style="margin-right: 10px;" />
-            <strong>| Intern</strong>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.svg" width="100" style="margin-right: 10px;" />
+            <strong> | Intern</strong>
         </div>
-        <div>12/2020 - 01/2021</div>
+        <div style='font-weight: normal;'>12/2020 - 01/2021</div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 st.markdown(
     """
